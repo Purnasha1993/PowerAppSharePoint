@@ -1,0 +1,232 @@
+Screen1 As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    lblEmpID As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =42
+        Size: =20
+        Text: ="Employee ID"
+        Width: =192
+        X: =50
+        Y: =76
+        ZIndex: =1
+
+    lblEmpName As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =45
+        Size: =20
+        Text: ="Employee Name"
+        Width: =215
+        X: =50
+        Y: =157
+        ZIndex: =2
+
+    txtEmpID As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =20
+        X: =750
+        Y: =77
+        ZIndex: =3
+
+    txtEmpName As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =20
+        X: =750
+        Y: =157
+        ZIndex: =4
+
+    lblReportsTo As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =55
+        Size: =20
+        Text: ="Reports To"
+        Width: =170
+        X: =50
+        Y: =220
+        ZIndex: =5
+
+    ddReportsTo As dropdown:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronFill: =App.Theme.Colors.PrimaryForeground
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =App.Theme.Colors.PrimaryForeground
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =App.Theme.Font
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Items: =Choices('New Joiners_1'.ReportsTo)
+        PressedColor: =App.Theme.Colors.PrimaryForeground
+        PressedFill: =App.Theme.Colors.Darker30
+        SelectionColor: =App.Theme.Colors.PrimaryForeground
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =20
+        X: =750
+        Y: =220
+        ZIndex: =6
+
+    lblHireDate As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =20
+        Text: ="Hire Date"
+        X: =50
+        Y: =303
+        ZIndex: =7
+
+    dateHireDate As datepicker:
+        BorderColor: =App.Theme.Colors.Darker40
+        CalendarHeaderFill: =App.Theme.Colors.Primary
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =App.Theme.Font
+        HoverDateFill: =App.Theme.Colors.Lighter70
+        IconBackground: =App.Theme.Colors.Primary
+        IconFill: =App.Theme.Colors.PrimaryForeground
+        SelectedDateFill: =App.Theme.Colors.Primary
+        Size: =20
+        X: =750
+        Y: =303
+        ZIndex: =8
+
+    lblAnnualSalary As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =20
+        Text: ="Annual Salary"
+        Width: =181
+        X: =50
+        Y: =376
+        ZIndex: =9
+
+    txtAnnualSalary As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Format: =TextFormat.Number
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =20
+        X: =750
+        Y: =376
+        ZIndex: =10
+
+    lblProjectName As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =20
+        Text: ="Project Name"
+        Width: =192
+        X: =50
+        Y: =461
+        ZIndex: =11
+
+    ddProjectName As dropdown:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronFill: =App.Theme.Colors.PrimaryForeground
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =App.Theme.Colors.PrimaryForeground
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =App.Theme.Font
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Items: =Choices('New Joiners_1'.ProjectName)
+        PressedColor: =App.Theme.Colors.PrimaryForeground
+        PressedFill: =App.Theme.Colors.Darker30
+        SelectionColor: =App.Theme.Colors.PrimaryForeground
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =20
+        X: =750
+        Y: =463
+        ZIndex: =12
+
+    Button1 As button:
+        BorderColor: =App.Theme.Colors.Primary
+        Color: =App.Theme.Colors.PrimaryForeground
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =App.Theme.Colors.Primary
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =App.Theme.Colors.PrimaryForeground
+        HoverFill: =App.Theme.Colors.Darker10
+        OnSelect: |-
+            =Patch('New Joiners_1',Defaults('New Joiners_1'),{
+                'Employee ID':txtEmpID.Text,'Employee Name':txtEmpName.Text,ReportsTo:ddReportsTo.SelectedText,'Hire Date':dateHireDate.SelectedDate,'Annual Salary':Value(txtAnnualSalary.Text),ProjectName:ddProjectName.SelectedText
+            });
+            Notify("Information has been submitted successfully.",NotificationType.Success);
+            Reset(txtEmpID);
+            Reset(txtEmpName);
+            Reset(txtAnnualSalary);
+            Reset(dateHireDate);
+            Reset(ddProjectName);
+            Reset(ddReportsTo);
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =20
+        Text: ="Submit"
+        Width: =178
+        X: =508
+        Y: =624
+        ZIndex: =13
+
